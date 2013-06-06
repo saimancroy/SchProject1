@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>WebGL БИТ I КГП 2013</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+    
+    <script>
+    var emptyFunc = function(){};
+    
+    var slideFuncs = {current: {onIn: emptyFunc, onOut: emptyFunc}};
+    
+    function startDemo(frameId, src){
+      var f = document.getElementById(frameId);
+      f.src = src;
+      f.width = 500;
+      f.height = 500;
+      f.marginHeight = 0;
+      f.scrolling = 'no';
+    }
+    
+    function stopDemo(frameId){
+      document.getElementById(frameId).src = "";
+    }
+    
+    var slideIndex = 0;
+    
+    function incrementSlideIndex(){
+      slideIndex++;
+    }
+    </script>
+    
+  </head>
+
+  <body>
+    <div class="presentation">
+      <div class="slides">
+
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">          
+          <section class="center intro">
+            <hgroup>
+              <h1>WebGL</h1>
+              <h2>БИТ I 2013</h2>
+              
+              <p>Ивайло Котрабаков<br />
+              1201561065</p>
+            
+              <p>Компютърна Графика и Презентации</p>
+                
+            </hgroup>
+            <p style="font-size: 16px">БИТ 1 2013</p>
+          </section>
+        </div>
+         
+
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header>WebGL (Web Graphics Library)</header>
+          <section>
+	    <h1>WebGL (Web Graphics Library) е JavaScript API за предоставяне на интерактивни 2D и 3D графики в рамките на всеки съвместим уеб браузър, без използването на плъгини. WebGL е интегриран напълно в всички уеб стандарти на браузъра позволява графичния процесор на компютъра (GPU) ускорено използване на физика и обработка на изображения и ефекти, като част от платното на уеб страница. WebGL елементи може да се смесват с други HTML елементи и наслагване с други части на страница или фон. WebGL програмите се състоят от контролен код, написан на JavaScript и Shader код, който се изпълнява от (GPU). WebGL е разработен и поддържан от нестопанска Khronos Group.</h1>	
+          </section>
+        </div>
+
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header>История</header>
+          <section>
+      <h1>WebGL е нараснал от платното 3D експерименти, започнати от Владимир Вукичевич в Mozilla. Вукичевич първи демонстрира прототип на 3D Canvas през 2006 година. До края на 2007 г., както Mozilla така и Opera са направили свои собствени отделни приложения.
+В началото на 2009 г., с нестопанска цел технология консорциум Khronos Group започна WebGL работната група, с участието първоначално от Apple, Google, Mozilla, Opera и др. Версия 1.0 на WebGL спецификацията е издаден март 2011 година. Към март 2012 г., председател на работната група е Кен Ръсел.
+Известни ранните приложения на WebGL включва Google Maps и зиготата тяло.</h1>  
+          </section>
+        </div>
+              
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header>Поддържащи браузъри</header>
+          <section>
+          <li><b>Mozilla Firefox</b> - WebGL е активиран за всички версии след 4.0 [11] Mozilla.</li>
+          <li><b>Google Chrome</b> – WebGL е активиран за всички версии след 9.[14] Google Chrome.</li>
+          <li><b>Opera</b> – WebGL го има в Opera 11 и 12, но трябва да се пусне от настройките.</li>
+          <li><b>Internet Explorer</b> WebGL се поддържа от IE11 Windows Blue, но трябва ръчно да се добави плъгин.
+
+          </section>
+        </div>
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide current">
+          <header>Пример 1 - 3D</header>
+          <section class="intro center">
+            <br>
+            <br>
+            <iframe id="transform" width="500" height="500" src="../Presentation /Example/ex1.html" marginheight="0" scrilling="no">
+            </iframe>
+            <script>
+              slideFuncs['slide-' + slideIndex]={
+                onIn: function(){startDemo("transform", '../Presentation /Example/ex1.html');},
+                onOut: function(){stopDemo("transform");}
+              };
+            </script>
+          </section>
+          <span class="counter">13</span>
+        </div>
+ 
+
+              
+
+
+
+       <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <section class="center intro">
+            <hgroup>
+              <h1>Благодаря</h1>
+              
+             <p>Ивайло Котрабаков<br />
+              Компютърна Графика и Презентации</p>
+            
+              <br />
+                
+            </hgroup>
+            <p style="font-size: 14px">БИТ 1 2013</p>
+          </section>
+        </div>
+
+    </div> <!-- end presentation -->
+    
+    <script src="slides.js"></script>
+  </body>
+</html>
+
