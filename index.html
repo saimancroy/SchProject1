@@ -65,6 +65,22 @@
           </section>
         </div>
 
+        <script>incrementSlideIndex();</script>
+        <div class="slide current">
+          <header>Пример 1 - 3D</header>
+          <section class="intro center">
+            <iframe id="transform" width="500" height="500" src="Example/ex1/index.html" marginheight="0" scrilling="no">
+            </iframe>
+            <script>
+              slideFuncs['slide-' + slideIndex]={
+                onIn: function(){startDemo("transform", 'Example/ex1/index.html');},
+                onOut: function(){stopDemo("transform");}
+              };
+            </script>
+          </section>
+          <span class="counter">13</span>
+        </div>
+ 
 
         <script>incrementSlideIndex();</script>
         <div class="slide">
@@ -75,7 +91,64 @@
 Известни ранните приложения на WebGL включва Google Maps и зиготата тяло.</h1>  
           </section>
         </div>
-              
+          
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header>Как работи</header>
+          <section>
+      <h1>WebGL работи по-сложно от нормалните web технологии защото е проектиран да работи директно с видеокартата. Това позволява зареждането на сложни 3D обекти който изискват сложни изчисления. Когато програмираме на WebGL обикновено се стремим да направим сцена от някакъв вид. Това вкючва множество последователни задачи – рисуване или извикване, всяка от които се зарежда от GPU чрез процес наречен „rendering pipeline“.<h1>
+         </section>
+        </div>
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header>Пример 2 - Lighting (click me!)</header>
+          <section class="intro center">
+                    
+          <iframe id="lights" width="500" height="500" src="Example/ex2.html"></iframe>
+          
+           <script>
+             slideFuncs['slide-' + slideIndex] = {
+               onIn: function(){startDemo('lights', 'Example/ex2/index.html');},
+               onOut: function(){stopDemo('lights');}
+             };
+          </script>
+          
+          </section>          
+        </div>
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header>Как работи</header>
+          <section>
+      <h1>В WebGL както и в повечето real-time 3D графики, триъгълника е основен елемент с който се рисува, затова процеса на рисуване в WebGL вкючва използването на JavaScript за да генерира информацията къде и как да бъдат създадени тези триъгълници. Както и цвят, форма и текстури. Тази информация се зарежда в GPU и връща образа на екрана.<h1>
+        <img src="images/cars_high_2.png" width="800" height="300">
+         </section>
+        </div>
+
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header></header>
+          <section>
+            <CENTER><img src="images/lo-high-poly.jpg"></CENTER>
+          </section>
+        </div>
+
+
+
+
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header>Създаване на съдържанието</header>
+          <section>
+            <img src="images/autodeskmaya.jpg" width="300" height="350" class="floatRight">
+      <h1>Сцените от WebGL могат да се създават без програмиране като използваме инструменти като Blender или Autodesk Maya. Сцените се експортват в WebGL. В началото това е било възможно благодарение на Inka3D, но след това е създаден и плъгин за Maya. Има и други услуги които публикуват интерактивни 3D онлайн съдържания с помощта на WebGL като p3d.in и Sketchlab. Някой игри и симулации съчетават създаването на модели, създаване на сцени и програмиране. AgentCubes е 3D инструмент/игра която дава възможност за създаването на игри без да е нужно да програмираме.<h1>
+         </section>
+        </div>
+
+
         <script>incrementSlideIndex();</script>
         <div class="slide">
           <header>Поддържащи браузъри</header>
@@ -88,28 +161,7 @@
           </section>
         </div>
 
-        <script>incrementSlideIndex();</script>
-        <div class="slide current">
-          <header>Пример 1 - 3D</header>
-          <section class="intro center">
-            <br>
-            <br>
-            <iframe id="transform" width="500" height="500" src="Example/ex1.html" marginheight="0" scrilling="no">
-            </iframe>
-            <script>
-              slideFuncs['slide-' + slideIndex]={
-                onIn: function(){startDemo("transform", 'Example/ex1.html');},
-                onOut: function(){stopDemo("transform");}
-              };
-            </script>
-          </section>
-          <span class="counter">13</span>
-        </div>
- 
-
-              
-
-
+                    
 
        <script>incrementSlideIndex();</script>
         <div class="slide">
